@@ -6,7 +6,7 @@
 body {
   font-family: 'Oxygen', sans-serif;
 }
-.meme--container{
+.meme--container {
   width: 70%;
   margin: 0 auto;
   border: 1px solid lightskyblue;
@@ -32,4 +32,38 @@ body {
 .meme--course {
   font-size: .98rem;
   margin-right: 2em;
+  font-weight: 500;
+}
+
+/* meme main-component */
+.meme--main {
+  padding: 1.5em;
+
+}
+.meme--form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px;
+}
+.meme--input {
+  text-indent: 10px;
+  font-size: .9rem;
+  border: 1px solid lightgray;
+}
+.meme--button, .meme--input{
+  font-family: 'Oxygen', sans-serif;
+  border-radius: 5px;
+  
+}
+.meme--button {
+  grid-column: span 2;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.meme--button:hover, .meme--button:focus {
+  background-color: mediumslateblue;
+  cursor: pointer;
 }
